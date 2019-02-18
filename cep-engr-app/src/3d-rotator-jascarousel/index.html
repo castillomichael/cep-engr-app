@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>jasCarousel | 3D carousel</title>
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="3D carousel, 3d slider, jquery carousel, carousel, jquery carousel plugin, carousel slider">
+    <meta name="description" content="jQuery plugin that lets you create beautiful responsive 3D carousel slider.">
+    <meta name="author" content="Parth Jasani">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/jas-carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jas-carousel.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="container">
+                <div class="header_inner">
+                   <h1 class="logo">
+                        <a href="http://jasaniweb.com" title="jas-carouse">
+                            <img src="img/jas-carousel-logo.png" alt="jas-carousel-logo">
+                        </a>
+                    </h1>
+                    <nav>
+                        <a href="#">Examples</a>
+                        <a href="https://github.com/jasCarousel/jascarousel#options">Options</a>
+                        <a href="https://github.com/jasCarousel/jascarousel">Github</a>
+                        <a href="./jasCarousel.zip" download>Download</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="container cf">
+            <div class="slider-main">
+                <div class="parth">
+                    <img src="img/parth.png" alt="parth">
+                </div>
+                <ul class="slider">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                </ul>
+            </div>
+        </div>
+        <h2>jQuery plugin that lets you create a beautiful responsive 3D carousel slider</h2>
+    </main>
+    <footer>
+        <p>Released under the <a href="https://opensource.org/licenses/MIT">MIT License</a></p>
+        <p>Copyright &copy; 2019 jasCarosuel | Developed with ♥ by <a href="http://jasaniweb.com" target="_blank">Parth</a></p>
+    </footer>
+</body>
+
+<script>
+    $(document).ready(function() {
+        $(".slider").jasCarousel({
+            margin: 20,
+            auto: false,
+            speed: 800,
+            delay: 2000,
+            slideFrontFace: false,
+            moveOnSlideClick: true,
+            prevText:'<img src="./img/jas-carousel-arrow-next.png">',
+            nextText:'<img src="./img/jas-carousel-arrow-prev.png">'
+        })
+    })
+
+</script>
+
+</html>
